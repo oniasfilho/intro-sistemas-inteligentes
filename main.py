@@ -1,8 +1,6 @@
 # 1) Dada duas listas, uma com a idade e outra com o peso das pessoas,
 # faça uma função que retorne quantas pessoas com mais de 40 anos
 # possuem peso superior à média dos pesos dessas pessoas.
-
-
 def primeiro_exercicio(idades, pesos):
     lista_pessoas = []
     lista_pessoas_acima_40 = []
@@ -79,3 +77,15 @@ def segundo_exercicio(linhas, colunas):
 
 print("Segundo exercicio:")
 segundo_exercicio(1, 3)
+
+
+# 3) Faça uma função que receba uma string como parâmetro e
+# retorne quantas palavras há na string.
+def terceiro_exercicio(string):
+    return len(string.split())
+
+
+print("Terceiro exercicio: \n Quantidade de palavras -> ", terceiro_exercicio("Good morning, my name is Onias, very "
+                                                                              "nice to meet you"), "\n\n")
+
+
