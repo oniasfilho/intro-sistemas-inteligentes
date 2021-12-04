@@ -1,6 +1,9 @@
 # 1) Dada duas listas, uma com a idade e outra com o peso das pessoas,
 # faça uma função que retorne quantas pessoas com mais de 40 anos
 # possuem peso superior à média dos pesos dessas pessoas.
+import random
+
+
 def primeiro_exercicio(idades, pesos):
     lista_pessoas = []
     lista_pessoas_acima_40 = []
@@ -89,3 +92,20 @@ print("Terceiro exercicio: \n Quantidade de palavras -> ", terceiro_exercicio("G
                                                                               "nice to meet you"), "\n\n")
 
 
+# 4) Crie um programa que gere 100 valores aleatórios entre
+# 1 e 10. Mostre qual número que menos apareceu e qual o que
+# mais apareceu, com suas respectivas frequências.
+def quarto_exercicio():
+    valores_randomicos = []
+    for x in range(100):
+        valores_randomicos.append(random.randint(1, 10))
+    maior_frequencia = max(set(valores_randomicos), key=valores_randomicos.count)
+    menor_frequencia = min(set(valores_randomicos), key=valores_randomicos.count)
+    maior_frequencia_vezes = valores_randomicos.count(maior_frequencia)
+    menor_frequencia_vezes = valores_randomicos.count(menor_frequencia)
+    print("Quarto exercicio: \n Numeros aleatórios: ", valores_randomicos, "\n")
+    print("Numero de maior frequencia: ", maior_frequencia, "| Frequencia: ", maior_frequencia_vezes, "\n")
+    print("Numero de menor_frequencia: ", menor_frequencia, "| Frequencia: ", menor_frequencia_vezes, "\n")
+
+
+quarto_exercicio()
